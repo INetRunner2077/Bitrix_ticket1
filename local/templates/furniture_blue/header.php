@@ -123,6 +123,9 @@ $APPLICATION->IncludeFile(
 ?>
 					</div>
 				</div>
+                <?php
+                $APPLICATION->ShowViewContent('prices');
+                ?>
 				
 				<div class="content-block">
 					<div class="content-block-inner">

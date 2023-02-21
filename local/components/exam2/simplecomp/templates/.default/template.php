@@ -2,7 +2,7 @@
 <p><b><?=GetMessage("SIMPLECOMP_EXAM2_CAT_TITLE")?></b></p>
 
 <?
-if(count($arResult['NEWS']) > 0) { ?>
+if((is_countable($arResult['NEWS'])) && (count($arResult['NEWS']) > 0)) { ?>
 <ul>
 
     <? foreach ($arResult['NEWS'] as $arNews) { ?>
