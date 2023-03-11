@@ -111,12 +111,13 @@ false,
      }
 
 $arResult['NEWS'] = $arNews;
- $this->SetResultCacheKeys(array('PRODUCT_CNT'));
-
-} else {
+ $this->SetResultCacheKeys(array('PRODUCT_CNT', 'NEWS'));
+    $this->includeComponentTemplate();
+}
+else {
 $this->AbortResultCache();
 }
 $APPLICATION->SetTitle(GetMessage('COUNT'). $arResult['PRODUCT_CNT']);
-$this->includeComponentTemplate();
+
 
 ?>

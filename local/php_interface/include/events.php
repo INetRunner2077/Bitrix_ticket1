@@ -3,7 +3,7 @@ AddEventHandler("main", "OnBeforeEventAdd", array("MyClass", "Mail"));
 
 class MyClass
 {
-    public static function Mail($event, $lid, $arFields)
+    public static function Mail(&$event, &$lid, &$arFields)
 {
    if($event == 'FEEDBACK_FORM') {
        global $USER;
